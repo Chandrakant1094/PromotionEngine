@@ -4,9 +4,13 @@ using System.Text;
 
 namespace PromotionEngine
 {
-    public class PromotionEngine : IPromotionEngine
+    public class PromotionEngine_V1 : IPromotionEngine
     {
         IDictionary<char, int> _purchasedProductCount;
+        public PromotionEngine_V1()
+        {
+            this._purchasedProductCount = new Dictionary<char, int>();
+        }
         public double GetOrderPrice(SkuCart cart)
         {
             populateProductWithCount(cart);

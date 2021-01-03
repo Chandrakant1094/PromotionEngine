@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PromotionEngine
 {
-    class PromotionRules
+    public class PromotionRules
     {
         public static IDictionary<char, Tuple<int, double>> _rules;
 
